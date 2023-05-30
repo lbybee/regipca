@@ -4,19 +4,19 @@ import numpy as np
 
 
 ext_modules=[Extension("proxcd",
-                       sources=["ipca/proxcd.pyx"],
+                       sources=["regipca/proxcd.pyx"],
                        include_dirs=[np.get_include()]),
             Extension("proxcd_lasso",
-                      sources=["ipca/proxcd_lasso.pyx"],
+                      sources=["regipca/proxcd_lasso.pyx"],
                       include_dirs=[np.get_include()]),
             Extension("lsgrad",
-                      sources=["ipca/lsgrad.pyx"],
+                      sources=["regipca/lsgrad.pyx"],
                       include_dirs=[np.get_include()]),
             Extension("kron",
-                      sources=["ipca/kron.pyx"],
+                      sources=["regipca/kron.pyx"],
                       include_dirs=[np.get_include()]),
             Extension("partinner",
-                      sources=["ipca/partinner.pyx"],
+                      sources=["regipca/partinner.pyx"],
                       include_dirs=[np.get_include()]),
             ]
 
